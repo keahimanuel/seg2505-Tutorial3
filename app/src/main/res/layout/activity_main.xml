@@ -10,25 +10,11 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- TextView pour afficher le nom de l'utilisateur -->
-        <TextView
-            android:id="@+id/textViewUsername"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nom : "
-            android:textSize="16sp"
-            android:layout_marginTop="16dp" />
-
-        <!-- TextView pour afficher l'email de l'utilisateur -->
-        <TextView
-            android:id="@+id/textViewEmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Email : "
-            android:textSize="16sp"
-            android:layout_marginTop="8dp" />
-
-        <!-- Ajoutez d'autres éléments UI si nécessaire -->
+        <!-- RecyclerView pour afficher les messages -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewMessages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 </ScrollView>
